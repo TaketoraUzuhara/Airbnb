@@ -16,9 +16,9 @@ class HostsTable extends Migration
         Schema::create('hosts', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name',225);
-            $table->integr('password');
+            $table->integer('password');
             $table->string('email',225);
-            $table->timestamp();
+            //$table->timestamp();
         });
     }
 

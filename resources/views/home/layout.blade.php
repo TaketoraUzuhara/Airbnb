@@ -49,7 +49,14 @@
       </nav>
     </header>
     <main>
-
+      <div class="texr1">ホテルをお探しですか?</div>
+    @foreach($hotels as $hotel)
+      <a class="hotel_information1" href="{{ route('hotel.information',['id' => $hotel->id]) }}" >
+       @foreach($hotels_images as $hotel_image)
+        <img src="{{ $hotel_image->image_url }}">
+        @endforeach
+      </a>
+    @endforeach
     </main>
     <!-- Footer -->
 <footer class="page-footer font-small blue pt-4">

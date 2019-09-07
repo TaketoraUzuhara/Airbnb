@@ -17,10 +17,10 @@ class ReviewsTable extends Migration
             $table->bigIncrements('id');
             $table->integer('user_id');
             $table->integer('hotel_id');
-            $tablr->string('image_url',225);
+            $table->string('image_url',225);
             $table->integer('host_id');
             $table->integer('like');
-            $tablr->string('comment',225);
+            $table->string('comment',225);
             $table->timestamps();
         });
     }

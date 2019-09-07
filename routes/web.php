@@ -13,4 +13,4 @@
 
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('/{id}/hotels','HomaController@index2')->name('hotels.index')
+Route::get('/hotels/(id}/hotel_information','HotelController@index')->name('hotel.information');

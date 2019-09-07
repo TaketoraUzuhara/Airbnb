@@ -17,7 +17,7 @@ class FavoritesTable extends Migration
             $table->bigIncrements('id');
             $table->integer('user_id');
             $table->integer('hotel_id');
-            $table->string('image_url',100)
+            $table->string('image_url',100);
             $table->integer('is_favorite')->default(0);
             $table->timestamps();
         });
